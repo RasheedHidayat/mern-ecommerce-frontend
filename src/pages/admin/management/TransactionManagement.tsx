@@ -1,6 +1,6 @@
-import AdminSidebar from "../../components/AdminSidebar.tsx";
+import AdminSidebar from "../../../components/admin/AdminSidebar.tsx";
 import {useState} from "react";
-import {OrderType,OrderItemType} from "../../type.ts";
+import {OrderType,OrderItemType} from "../../../type.ts";
 import {Link} from "react-router-dom";
 
 let img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRugxnJy9YzBfKpQgJnPb2uQw1xG59oGkEFPuq5743Hn3kj8CvY1ARt6vhHEnwybOKgFWberA&s";

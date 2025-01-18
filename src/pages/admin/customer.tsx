@@ -1,7 +1,7 @@
-import AdminSidebar from "../components/AdminSidebar.tsx";
+import AdminSidebar from "../../components/admin/AdminSidebar.tsx";
 import {Column} from "react-table";
 import {useState, ReactElement,useCallback} from "react";
-import TableHOC from "../components/TableHOC.tsx";
+import TableHOC from "../../components/admin/TableHOC.tsx";
 import { FaTrash } from "react-icons/fa";
 interface DataType{
     avater:ReactElement,

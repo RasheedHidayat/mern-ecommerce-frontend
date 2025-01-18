@@ -1,9 +1,16 @@
-@import "mixin";
-@import "dashboard";
-@import "products";
-@import "chart";
-@import "dashboardapp";
-@import "mediaQuery";
+@import "./admin-styles/mixin";
+@import "./admin-styles/dashboard";
+@import "./admin-styles/products";
+@import "./admin-styles/chart";
+@import "./admin-styles/dashboardapp";
+@import "./admin-styles/mediaQuery";
+@import "./home.scss";
+@import "./cart.scss";
+@import "./shipping.scss";
+@import "./login.scss";
+@import "./_search.scss";
+
+
 
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -29,6 +36,81 @@ a{
 .green{
   color:rgb(0,195,0);
 }
+
+
+
+
+
+
+
+.container{
+  max-width:1367px;
+  width:100%;
+  margin:auto;
+  overflow:auto;
+  >h1{
+    @include heading;
+    margin:1rem 0;
+    text-align:left;
+
+  }
+}
+
+
+.heading{
+  @include heading;
+  margin:1rem 0;
+  text-align:center;
+}
+
+.header{
+  @include flex(row,flex-end,stretch,1.2rem);
+  a{
+    color:$color2;
+    letter-spacing:2px;
+    font-size:1.2rem;
+
+    &:hover{
+      color:$color3;
+    }
+
+  }
+  button{
+    border:none;
+    font-size:1.2rem;
+    cursor:pointer;
+    background-color:transparent;
+    &:hover{
+      color:$color3;
+    }
+  }
+  dialog{
+    border:1px solid #ccc;
+    border-radius:5px;
+    padding:10px;
+    width:100px;
+    position:absolute;
+    top: 8%;
+    left: calc(100% - 100px) ;
+    >div{
+      @include flex(column,flex-start, center, 0.25rem);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .admin-container{

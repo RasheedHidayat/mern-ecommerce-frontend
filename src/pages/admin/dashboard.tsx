@@ -1,12 +1,12 @@
-import AdminSidebar from "../components/AdminSidebar.tsx";
+import AdminSidebar from "../../components/admin/AdminSidebar.tsx";
 import {BsSearch} from "react-icons/bs";
 import {FaRegBell} from "react-icons/fa";
 import {HiTrendingUp,HiTrendingDown} from "react-icons/hi";
-import user from "../assets/images/user.png";
-import data from "../assets/data.json";
-import {BarChart,DoughnutChart} from "../components/Charts.js";
+import user from "../../assets/images/user.png";
+import data from "../../assets/data.json";
+import {BarChart,DoughnutChart} from "../../components/admin/Charts.js";
 import {BiMaleFemale} from "react-icons/bi";
-import Table from "../components/DashboardTable.tsx";
+import Table from "../../components/admin/DashboardTable.tsx";
 const Dashboard =()=>{
     return(
         <div className="admin-container">

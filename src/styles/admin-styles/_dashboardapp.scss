@@ -27,11 +27,12 @@
 
         .tosscoin{
             margin:2rem;
-            @include square(15rem);
+            @include square(16rem);
             position:relative;
             cursor:pointer;
             transform-style:preserve-3d;
             transition:all 0.5s;
+
             >div{
                 border-radius:50%;
                 @include square(100%);
@@ -42,12 +43,15 @@
                 background-size:contain;
                 backface-visibility:hidden;
                 filter:drop-shadow(0 10px 10px rgba(0,0,0,0.521) );
+
                 &:first-of-type{
                     background-image:url("../assets/images/head.png");
+
                 }
                 &:last-of-type{
                     background-image:url("../assets/images/tail.jpg");
                     transform:rotateY(-180deg);
+
                 }
             }
         }

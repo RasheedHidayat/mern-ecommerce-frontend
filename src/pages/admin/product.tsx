@@ -1,5 +1,5 @@
-import AdminSidebar from "../components/AdminSidebar";
-import TableHOC from "../components/TableHOC.tsx";
+import AdminSidebar from "../../components/admin/AdminSidebar.tsx";
+import TableHOC from "../../components/admin/TableHOC.tsx";
 import {ReactElement,useState,useCallback} from "react";
 import {Column} from "react-table";
 import {Link} from "react-router-dom";

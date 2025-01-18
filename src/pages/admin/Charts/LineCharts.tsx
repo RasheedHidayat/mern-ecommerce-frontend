@@ -1,5 +1,5 @@
-import AdminSidebar from "../../components/AdminSidebar.tsx";
-import {LineChart,month} from "../../components/Charts.tsx";
+import AdminSidebar from "../../../components/admin/AdminSidebar.tsx";
+import {LineChart,month} from "../../../components/admin/Charts.tsx";
 const LineCharts=()=>{
     return(
         <div className="admin-container">

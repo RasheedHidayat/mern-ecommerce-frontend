@@ -1,6 +1,6 @@
-import AdminSidebar from "../../components/AdminSidebar.tsx";
-import {PieChart,DoughnutChart} from "../../components/Charts.tsx"; 
-import Data from "../../assets/data.json";
+import AdminSidebar from "../../../components/admin/AdminSidebar.tsx";
+import {PieChart,DoughnutChart} from "../../../components/admin/Charts.tsx"; 
+import Data from "../../../assets/data.json";
 
 const PieCharts =()=>{
     return(

@@ -36,3 +36,14 @@
     width:$s;
     height:$s;
 }
+@mixin baseShadow{
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.384);
+}
+@mixin btn($p: 0.5rem 1rem, $bg, $color){
+    cursor:pointer;
+    outline:none;
+    border:none;
+    padding:$p;
+    background-color:$bg;
+    color:$color;
+}

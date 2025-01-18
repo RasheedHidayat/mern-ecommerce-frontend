@@ -1,4 +1,4 @@
-import AdminSidebar from "../../components/AdminSidebar.tsx";
+import AdminSidebar from "../../../components/admin/AdminSidebar.tsx";
 import {useState,ChangeEvent} from "react";
 const NewProduct=()=>{
     const [name,setName]=useState<string>("");

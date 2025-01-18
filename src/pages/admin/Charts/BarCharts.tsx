@@ -1,5 +1,5 @@
-import AdminSidebar from "../../components/AdminSidebar.tsx";
-import {BarChart} from "../../components/Charts.tsx";
+import AdminSidebar from "../../../components/admin/AdminSidebar.tsx";
+import {BarChart} from "../../../components/admin/Charts.tsx";
 
 const months=[
     "January","Febuary","March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
