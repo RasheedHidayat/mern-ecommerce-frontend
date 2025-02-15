@@ -1,7 +1,7 @@
 import {useState, ChangeEvent, useEffect, FormEvent} from "react";
 import {BiArrowBack} from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { cartReducerInitialState } from "../types/reducer-types";
 import axios from "axios";
 import { server } from "../redux/store";

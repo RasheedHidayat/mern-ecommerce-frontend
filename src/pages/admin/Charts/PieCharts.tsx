@@ -34,7 +34,7 @@ const PieCharts =()=>{
                 <h1>Pie & Doughnut Charts</h1>
                 <section>
                     <div>
-                        <PieChart data={[order.delivered, order.shipped, order.processing]} labels={["Delivered", "Shipped", "Processing"]} backgroundColor={ Array(3).map(i=>`hsl(${22*Math.random()*8}, ${Math.random()*8*19}%, 10%)`)}
+                        <PieChart data={[order.delivered, order.shipped, order.processing]} labels={["Delivered", "Shipped", "Processing"]} backgroundColor={ Array(3).map(()=>`hsl(${22*Math.random()*8}, ${Math.random()*8*19}%, 10%)`)}
                      offset={[0,0,50]} />
                     </div>
                     <h2>Order Fulfillment ratio</h2>
@@ -42,7 +42,7 @@ const PieCharts =()=>{
                 <section>
                     <div>
                         <DoughnutChart data={categories.map(i=>Object.values(i)[0])}
-                         labels={categories.map(i=>Object.keys(i)[0])} backgroundColor={categories.map(i=>`hsl(${Math.random()*10*23},${Math.random()*10*10}%,50%)`)} 
+                         labels={categories.map(i=>Object.keys(i)[0])} backgroundColor={categories.map(()=>`hsl(${Math.random()*10*23},${Math.random()*10*10}%,50%)`)} 
                          offset={[0,0,50]}
                          />
                     </div>

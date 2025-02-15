@@ -8,7 +8,6 @@ import { useDeleteOrderMutation, useOrderDetailsQuery, useUpdateOrderMutation } 
 import { Order } from "../../../types/types.ts";
 import { SkeletonLoader } from "../../../components/loader.tsx";
 import { server } from "../../../redux/store.ts";
-import toast from "react-hot-toast";
 import { responseToast } from "../../../utils/features.ts";
 
 const defaultData:Order = {

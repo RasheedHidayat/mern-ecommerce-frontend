@@ -15,7 +15,7 @@ type cartItemProps ={
 
 
 const CartItemCard=({cartItem, decrementHandler, incrementHandler, removeHandler}:cartItemProps)=>{
-    const{productId, photo, name, price, quantity, stock}=cartItem;
+    const{productId, photo, name, price, quantity}=cartItem;
 
     return(
         <div className="cart-item">

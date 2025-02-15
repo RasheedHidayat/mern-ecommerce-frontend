@@ -4,7 +4,7 @@ import {lazy,Suspense, useEffect} from "react";
 import Loading from "./components/admin/Loader.tsx";
 import Loader from "./components/loader.tsx";
 import Header from "./components/header.tsx";
-import { onAuthStateChanged, signOut } from "firebase/auth";
+import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase.ts";
 import { useDispatch, useSelector } from "react-redux";
 import { userExist, userNotExist } from "./redux/reducer/userReducer.ts";

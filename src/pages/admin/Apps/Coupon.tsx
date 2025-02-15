@@ -62,11 +62,11 @@ const Coupon=()=>{
                         <input type="number" placeholder="Coupon Length" value={size} min={8} max={25} onChange={(e)=>setSize(Number(e.target.value))} />
                         <fieldset>
                             <legend>Include</legend>
-                            <input type="checkbox" checked={includeNumbers} onChange={(e)=>setIncludeNumbers(prev=>!prev)} />
+                            <input type="checkbox" checked={includeNumbers} onChange={()=>setIncludeNumbers(prev=>!prev)} />
                             <span>Numbers</span>
-                            <input type="checkbox" checked={includeCharacters} onChange={(e)=>setIncludeCharacters(prev=>!prev)} />
+                            <input type="checkbox" checked={includeCharacters} onChange={()=>setIncludeCharacters(prev=>!prev)} />
                             <span>Characters</span>
-                            <input type="checkbox" checked={includeSymbols} onChange={e=>setIncludeSymbols(prev=>!prev)} />
+                            <input type="checkbox" checked={includeSymbols} onChange={()=>setIncludeSymbols(prev=>!prev)} />
                             <span>Symbols</span>
                         </fieldset>
                         <button type="submit">Generate</button>

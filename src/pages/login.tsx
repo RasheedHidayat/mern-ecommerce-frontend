@@ -1,4 +1,4 @@
-import {  GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
+import {  GoogleAuthProvider } from "firebase/auth";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { FcGoogle } from "react-icons/fc";

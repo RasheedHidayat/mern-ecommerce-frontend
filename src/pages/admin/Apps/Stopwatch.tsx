@@ -20,11 +20,11 @@ const Stopwatch=()=>{
     const[isRuning,setIsRuning]=useState<boolean>(false);
 
     useEffect(()=>{
-        let intervalId:number;
+        let intervalId:NodeJS.Timeout ;
         if(isRuning){
 
         intervalId=setInterval(()=>{
-            setTime(prev=> prev+1);
+              setTime(prev=> prev+1);
         },1000);
 
         return ()=>clearInterval(intervalId);
