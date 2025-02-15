@@ -70,6 +70,7 @@
         height:85vh;
         padding:2rem;
         width:100%;
+        position:relative;
         max-width:400px;
         background-color:white;
         border-radius:5px;
@@ -115,6 +116,26 @@
                     font-size:1.1rem;
                     cursor:pointer;
                 }
+        }
+        .del-product{
+            position: absolute;
+            top: -7px;
+            border-radius:50%;
+            background-color:black;
+            color:white;
+            line-height:none;
+            width: 40px;
+            height: 40px;
+            display:grid;
+            place-items: center;
+            right:0px;
+            font-size:20px;
+            cursor:pointer;
+
+            &:hover{
+                background-color:red;
+                
+            }
         }
     }
     .shipping-info-card{

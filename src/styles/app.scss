@@ -11,7 +11,6 @@
 @import "./_search.scss";
 
 
-
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -107,8 +106,27 @@ a{
 
 
 
+.not-found{
+  @include flex(column);
+  height: 80vh;
+  > svg{
+    font-size: 5rem;
+  }
+}
 
-
+.checkout-container{
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  > form{
+    @include flex(column, flex-start, stretch, 2rem);
+    > button{
+      @include btn(1rem, $color3, $color1);
+      width: 100%;
+      font-size: 1.1rem;
+    }
+  }
+}
 
 
 
@@ -271,8 +289,36 @@ a{
 
 }
 
+
+.skeleton-laoder{
+  display:flex;
+  flex-direction:column;
+}
+.skeleton-shape{
+  height:30px;
+  width: 100%;
+  background-color:#ddd;
+  margin-bottom:10px;
+  border-radius:4px;
+  animation:skeleon-loading 1.5s infinite;
+}
+
 @keyframes loader-anim{
   to{
     transform:rotateZ(360deg);
+  }
+} 
+
+
+@keyframes skeleon-loading{
+  0%{
+    opacity:0.6;
+
+  }
+  50%{
+    opacity:1;
+  }
+  100%{
+    opacity:0.6;
   }
 }

@@ -10,16 +10,24 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.5.1",
+    "@stripe/react-stripe-js": "^3.1.1",
+    "@stripe/stripe-js": "^5.6.0",
+    "@swc/core": "^1.10.14",
+    "axios": "^1.7.9",
     "chart.js": "^4.4.7",
     "firebase": "^11.1.0",
+    "moment": "^2.30.1",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.5.1",
     "react-icons": "^5.4.0",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^7.1.1",
     "react-table": "^7.8.0",
-    "sass": "^1.83.1"
+    "sass": "^1.83.1",
+    "vote": "^0.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -33,6 +41,6 @@
     "globals": "^15.14.0",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
-    "vite": "^6.0.5"
+    "vite": "^6.0.11"
   }
 }

@@ -1,15 +1,28 @@
 import {Link} from "react-router-dom";
 import {FaSearch,FaShoppingBag, FaSignInAlt,FaUser, FaSignOutAlt} from "react-icons/fa";
 import {useState} from "react";
+import { User } from "../types/types";
+import { signOut } from "firebase/auth";
+import { auth } from "../firebase";
+import toast from "react-hot-toast";
 
-const user={_id:"fd",role:""};
+interface PropsType {
+    user:User | null,
 
-const Header=()=>{
+};
+
+const Header=({user}:PropsType)=>{
     const [open,setOpen]=useState<boolean>(false);
+    console.log(user);
 
-
-    const logoutHandler=()=>{
-        setOpen(false);
+    const logoutHandler=async()=>{
+        try{
+            await signOut(auth);
+            toast.success("Sign out Successfully");
+            setOpen(false);
+        }catch(err){
+            toast.error("Sign out Fail"); 
+        }
     }
 
     return(
@@ -27,6 +40,7 @@ const Header=()=>{
                     <dialog open={open}>
                         <div>
                             {
+                                
                                 user.role=="admin" && 
                                 <Link to={"/admin/dashboard"} onClick={()=>setOpen(false)}>Admin</Link>
                             }
