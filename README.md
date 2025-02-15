@@ -1,50 +1,25 @@
-# React + TypeScript + Vite
+Install Dependencies
+For Dev - npm i && npm run dev For Product - npm i && npm run preview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Env Variables
+Make Sure to Create a .env file in root directory and add appropriate variables in order to use the app.
 
-Currently, two official plugins are available:
+Essential Variables
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+VITE_FIREBASE_KEY= from firebase
 
-## Expanding the ESLint configuration
+VITE_AUTH_DOMAIN= from firebase
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+VITE_PROJECT_ID=from firebase
 
-- Configure the top-level `parserOptions` property like this:
+VITE_STORAGE_BUCKET=from firebase
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+VITE_MESSAGING_SENDER_ID=from firebase
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+VITE_APP_ID=from firebase
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+VITE_SERVER=Your Backend Server URl
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+VITE_STRIPE_KEY=Stripe Publishable Key
+
+fill each filed with your info respectively
